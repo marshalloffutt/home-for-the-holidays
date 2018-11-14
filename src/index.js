@@ -1,9 +1,8 @@
 import './index.scss';
-import $ from 'jquery';
+import createNavbar from './components/Navbar/navbar';
 
 const initializeApp = () => {
-  $('#body').html('hello');
-  console.log('Helllooooooo');
+  createNavbar();
 };
 
 initializeApp();
