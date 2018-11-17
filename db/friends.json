@@ -1,49 +1,47 @@
 {
-  "friends": {
-    "friend1": {
-      "name": "Callan M.",
-      "address": "1 Main Street, Nashville, TN 37209",
-      "phoneNumber": "1112223333",
-      "email": "callan@yomamma.com",
-      "relationship": "sister from anotha mother",
-      "isAvoiding": true,
-      "uid": 1234
-    },
-    "friend2": {
-      "name": "John L.",
-      "address": "251 Menlove Ave, Liverpool, UK",
-      "phoneNumber": "2223334444",
-      "email": "eggman@applerecords.com",
-      "relationship": "friend",
-      "isAvoiding": false,
-      "uid": 1235
-    },
-    "friend3": {
-      "name": "George H.",
-      "address": "12 Arnold Grove, Liverpool, UK",
-      "phoneNumber": "3334445555",
-      "email": "magpie@applerecords.com",
-      "relationship": "friend",
-      "isAvoiding": true,
-      "uid": 1236
-    },
-    "friend4": {
-      "name": "Paul M.",
-      "address": "20 Forthlin Rd, Liverpool, UK",
-      "phoneNumber": "4445556666",
-      "email": "the_walrus@applerecords.com",
-      "relationship": "uncle",
-      "isAvoiding": false,
-      "uid": 1237
-    },
-    "friend5": {
-      "name": "Ringo S.",
-      "address": "10 Admiral Grove, Liverpool, UK",
-      "phoneNumber": "5556667777",
-      "email": "starr_time@applerecords.com",
-      "relationship": "friend",
-      "isAvoiding": false,
-      "uid": 1238
-    }
+  "friend1": {
+    "name": "Callan M.",
+    "address": "1 Main Street, Nashville, TN 37209",
+    "phoneNumber": "1112223333",
+    "email": "callan@yomamma.com",
+    "relationship": "sister from anotha mother",
+    "isAvoiding": true,
+    "uid": "Zle8O8uJJ7SX4Yg6tj76bDHIS8m1"
+  },
+  "friend2": {
+    "name": "John L.",
+    "address": "251 Menlove Ave, Liverpool, UK",
+    "phoneNumber": "2223334444",
+    "email": "eggman@applerecords.com",
+    "relationship": "friend",
+    "isAvoiding": false,
+    "uid": "Zle8O8uJJ7SX4Yg6tj76bDHIS8m1"
+  },
+  "friend3": {
+    "name": "George H.",
+    "address": "12 Arnold Grove, Liverpool, UK",
+    "phoneNumber": "3334445555",
+    "email": "magpie@applerecords.com",
+    "relationship": "friend",
+    "isAvoiding": true,
+    "uid": "Zle8O8uJJ7SX4Yg6tj76bDHIS8m1"
+  },
+  "friend4": {
+    "name": "Paul M.",
+    "address": "20 Forthlin Rd, Liverpool, UK",
+    "phoneNumber": "4445556666",
+    "email": "the_walrus@applerecords.com",
+    "relationship": "uncle",
+    "isAvoiding": false,
+    "uid": "1237"
+  },
+  "friend5": {
+    "name": "Ringo S.",
+    "address": "10 Admiral Grove, Liverpool, UK",
+    "phoneNumber": "5556667777",
+    "email": "starr_time@applerecords.com",
+    "relationship": "friend",
+    "isAvoiding": false,
+    "uid": "1238"
   }
 }
