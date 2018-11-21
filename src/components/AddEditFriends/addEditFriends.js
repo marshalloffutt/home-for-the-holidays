@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import authHelpers from '../../helpers/authHelpers';
+import friendsData from '../../helpers/data/friendsData';
 
 const formBuilder = () => {
   const form = `
@@ -11,15 +12,15 @@ const formBuilder = () => {
       <label for="form-friend-address">Address:</label>
       <input type="text" class="form-control" id="form-friend-address" placeholder="400 Monkey Ln">
     </div>
-    <div class="form-check">
+    <div class="form-group">
       <label for="form-friend-email">Email:</label>
       <input type="email" class="form-control" id="form-friend-email" placeholder="monkeybutt@aol.com">
     </div>
-    <div class="form-check">
+    <div class="form-group">
       <label for="form-friend-phone">Phone #:</label>
       <input type="text" class="form-control" id="form-friend-phone" placeholder="867-5309">
     </div>
-    <div class="form-check">
+    <div class="form-group">
       <label for="form-friend-relationship">Relationship:</label>
       <input type="text" class="form-control" id="form-friend-relationship" placeholder="Brother">
     </div>
@@ -37,7 +38,27 @@ const gettingFriendFromForm = () => {
     isAvoiding: false,
     uid: authHelpers.getCurrentUid(),
   };
-  console.log(friend);
+  return friend;
 };
 
-export default { gettingFriendFromForm, formBuilder };
+const buildAddForm = () => {
+  let domString = '<h2>Add New Friend</h2>';
+  domString += formBuilder();
+  domString += '<button id="add-friend">Save Friend</button>';
+  $('#add-edit-friend').html(domString).show();
+};
+
+const addNewFriend = () => {
+  const newFriend = gettingFriendFromForm();
+  friendsData.addNewFriend(newFriend)
+    .then((result) => {
+      console.log(result);
+    })
+    .catch((error) => {
+      console.error('error', error);
+    });
+};
+
+$('body').on('click', '#add-friend', addNewFriend);
+
+export default buildAddForm;
