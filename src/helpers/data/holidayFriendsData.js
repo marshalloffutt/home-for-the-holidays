@@ -20,5 +20,4 @@ const getHolidayIdsForFriend = friendId => new Promise((resolve, reject) => {
     });
 });
 
-
 export default { getHolidayIdsForFriend };
